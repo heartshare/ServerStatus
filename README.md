@@ -1,4 +1,4 @@
-# ServerStatus Rebild
+# ServerStatus Rebuild
 ### By Munzy
                 
 
@@ -82,6 +82,12 @@ Safari
 Firefox
 
 Internet Explorer 11
+
+# Donations
+
+If you like my projects, and work then please donate! 
+
+https://www.cameronmunroe.com/coffee/
 
 
 # Based On
