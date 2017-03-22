@@ -40,6 +40,7 @@ bash
 
 apache / nginx / etc.
 
+/scripts/bash/
 
 https://www.qwdsa.com/converse/threads/serverstatus-bash-uptime-php-alternative.55/
 
@@ -48,6 +49,8 @@ https://www.qwdsa.com/converse/threads/serverstatus-bash-uptime-php-alternative.
 perl
 
 apache / nginx / etc.
+
+/scripts/perl/
 
 https://www.qwdsa.com/converse/threads/serverstatus-perl-uptime-php-alternative.56/
 
