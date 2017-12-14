@@ -58,8 +58,7 @@ https://www.qwdsa.com/converse/threads/serverstatus-perl-uptime-php-alternative.
 
 # Installation & Guides
 
-
-https://www.qwdsa.com/c/threads/serverstatus-rebuild.43
+https://www.qwdsa.com/threads/serverstatus-rebuild.43
 
 # Main Repos
 
