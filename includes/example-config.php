@@ -5,8 +5,19 @@ $servers = array();
 //$servers[] = array('url' => '', 'name' => '', 'location' => '', 'host' => '', 'type' => '');
 //============================================================================================
 // The order you put your arrays in will be how they show up on the server!
-$servers[] = array('url' => 'http://www.munroenet.com/uptime.php', 'name' => 'WebServer', 'location' => 'LALA Land', 'host' => 'NSA', 'type' => 'WWW');
-$servers[] = array('url' => 'https://cdn.content-network.net/.uptime.txt', 'name' => 'CDN', 'location' => 'Dallas,TX', 'host' => 'Catalysthost is the best host', 'type' => 'CDN');
+$servers[] = array(
+	'break' => 1,
+	'name' => ' Examples '
+);
+
+$servers[] = array(
+	'url' => 'https://uptime.munroenet.com/uptime.php', 
+	'name' => 'Example Host', 
+	'location' => 'Dallas Texas', 
+	'host' => 'Example Host', 
+	'type' => 'Test File'
+);
+
 
 
 

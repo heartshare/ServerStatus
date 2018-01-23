@@ -4,7 +4,7 @@
 // ========================================================================================================================================
 //
 // By Cameron Munroe ~ Mun
-// Website: https://www.qwdsa.com/converse/threads/serverstatus-rebuild.43/ 
+// Website: https://www.qwdsa.com/threads/serverstatus-rebuild.43/ 
 // Version 0.1
 //
 //
@@ -98,20 +98,15 @@ echo json_encode($post); // Time to show the world what we are made of!
 
 // This function determines what color bars we should be using!
 function levels($perc, $dl, $wl){
-    // make nice green bars
-    if($perc < 30) {
-        $width = 30;
-    } else {
-        $width = $perc;
-    }
+
 	if($perc > $dl) {
-        $return = '<div class="progress progress-striped active"><div class="bar bar-danger" style="width: ' . $width . '%;">' . $perc . '%</div></div>';
+        $return = '<div class="progress progress-striped active"><div class="bar bar-danger" style="width: ' . $perc . '%;">' . $perc . '%</div></div>';
     }
 	elseif($perc > $wl) {
-        $return = '<div class="progress progress-striped active"><div class="bar bar-warning" style="width: ' . $width . '%;">' . $perc . '%</div></div>';
+        $return = '<div class="progress progress-striped active"><div class="bar bar-warning" style="width: ' . $perc . '%;">' . $perc . '%</div></div>';
     }
 	else { 
-        $return = '<div class="progress progress-striped active"><div class="bar bar-success" style="width: ' . $width . '%;">' . $perc . '%</div></div>';
+        $return = '<div class="progress progress-striped active"><div class="bar bar-success" style="width: ' . $perc . '%;">' . $perc . '%</div></div>';
     }
     return $return;
     
