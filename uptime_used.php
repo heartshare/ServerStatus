@@ -18,6 +18,8 @@
 //                                                                  Settings!
 // ========================================================================================================================================
 
+$apiKey = ''; //Set a key to access this page.
+
 $dl = 90; // At this percent of usage we will show it as RED!
 $wl = 75; // At this percent of usage we will show it as Yellow!
 
@@ -34,6 +36,20 @@ $loadtime = 0; // the settings are:
 //  0 for 1  minute average
 //  1 for 5  minute average
 //  2 for 15 minute average
+
+// ========================================================================================================================================
+//                                                                  Validate API Key
+// ========================================================================================================================================
+
+if(isset($apiKey) && !(isset($_GET['key']))){
+    http_response_code(401);
+    exit("401 Unauthorized.");
+}
+elseif(isset($apiKey) && ($_GET['key'] != $apiKey)){
+    http_response_code(401);
+    exit("401 Unauthorized.");
+}
+
 
 // ========================================================================================================================================
 //                                                                  Getting Data!
@@ -86,6 +102,10 @@ $post['load'] = $internal['load'][$loadtime]; // posting load avg.
 // Are we online?
 $post['online'] = '<div class="progress"><div class="bar bar-success" style="width: 100%;"><small>Up</small></div></div>';
 // YES WE ARE!
+
+if(isset($apiKey)){
+    $post['apiKey'] = 'Valid';
+}
 
 // ========================================================================================================================================
 //                                                                  Post Data
