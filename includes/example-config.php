@@ -7,7 +7,7 @@ $servers = array();
 // The order you put your arrays in will be how they show up on the server!
 $servers[] = array(
 	'break' => 1,
-	'name' => ' Examples '
+	'name' => ' Test Servers '
 );
 
 $servers[] = array(
